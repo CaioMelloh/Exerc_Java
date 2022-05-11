@@ -59,6 +59,14 @@ public class Main {
            System.out.println(x.toString()); /*printando valor que to string retorna*/
        }
        
+       System.out.println();
+       System.out.println("Você gostaria de demitir alguém? (y/n)");
+       char b = fg.next().charAt(0);
+       if(b == 'y'){
+           
+       }
+       
+       
        
        
        fg.close();
