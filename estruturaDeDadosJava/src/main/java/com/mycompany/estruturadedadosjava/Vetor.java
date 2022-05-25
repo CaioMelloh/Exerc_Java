@@ -4,6 +4,8 @@
  */
 package com.mycompany.estruturadedadosjava;
 
+import java.util.Arrays;
+
 /**
  *
  * @author caioh
@@ -42,9 +44,27 @@ public class Vetor{
             throw new Exception("Você excedeu o tamanho limite do seu vetor!");
            
         }
-        
-        
     }
+    
+     public int tamanho(){
+            return this.tamanho;
+        }
+
+     
+    @Override    // no toString eu quero mostrar apenas os elementos que existem no vetor, (possuem algum dado), e não toda sua capacidade.
+    public String toString() {
+        String[] vect = new String[this.tamanho];
+        
+        for(int i= 0; i<this.tamanho; i++){
+               vect[i] = elementos[i];
+        } 
+            return Arrays.toString(vect);
+    }
+     
+     
+     
+   
+    
     
 }
     
